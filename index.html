@@ -12,8 +12,8 @@
     <section class="sec">
         <header>
             <a href="#"><img src="logo.png" alt="Pepsi" class="logo" /></a>
-
-            <ul>
+            <div class="toggleMenu" onclick="toggleMenu()"></div>
+            <ul class="navigation">
                 <li>
                     <a href="#">Home</a>
                 </li>
@@ -45,19 +45,19 @@
 
         <ul class="thumb">
             <li><img src="pepsi001.png" alt="pepsi" onclick="imgSlider('pepsi001.png'); changeBgColor('#0062be');"></li>
-            <li><img src="pepsi002.png" alt="pepsi" onclick="imgSlider('pepsi002.png'); changeBgColor('#9E9FA2');"></li>
+            <li><img src="pepsi002.png" alt="pepsi" onclick="imgSlider('pepsi002.png'); changeBgColor('#838488');"></li>
             <li><img src="pepsi003.png" alt="pepsi" onclick="imgSlider('pepsi003.png'); changeBgColor('#1e1e1e');"></li>
         </ul>
 
         <ul class="sci">
             <li>
-                <a href=""><img src="facebook.png" alt=""></a>
+                <a href="https://www.facebook.com/pepsiES"><img src="facebook.png" alt=""></a>
             </li>
             <li>
-                <a href=""><img src="twitter.png" alt=""></a>
+                <a href="https://twitter.com/PepsiVEN?"><img src="twitter.png" alt=""></a>
             </li>
             <li>
-                <a href=""><img src="instagram.png" alt=""></a>
+                <a href="https://www.instagram.com/pepsi"><img src="instagram.png" alt=""></a>
             </li>
         </ul>
     </section>
@@ -70,6 +70,14 @@
         function changeBgColor(color) {
             const sec = document.querySelector('.sec');
             sec.style.background = color;
+        }
+
+        function toggleMenu() {
+            const toggleMenu = document.querySelector('.toggleMenu');
+            const navigation = document.querySelector('.navigation');
+
+            toggleMenu.classList.toggle('active');
+            navigation.classList.toggle('active');
         }
     </script>
 </body>
