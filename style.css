@@ -258,7 +258,7 @@ header ul li a:hover {
         position: absolute;
         top: 50%;
         right: 0;
-        width: 50px;
+        width: 40px;
         background: rgba(0, 0, 0, 0.2);
         transform: translateY(-50%);
         display: flex;
@@ -266,5 +266,8 @@ header ul li a:hover {
         align-items: center;
         border-top-left-radius: 10px;
         border-bottom-left-radius: 10px;
+    }
+    .sci img {
+        height: auto;
     }
 }
